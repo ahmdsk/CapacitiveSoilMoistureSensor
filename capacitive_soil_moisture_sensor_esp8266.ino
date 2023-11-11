@@ -1,4 +1,4 @@
-// Belajar Menghubungkan Sensor Kelembapan Tanah Dengan ESP8266
+// Belajar Menghubungkan Sensor Kelembaban Tanah Dengan ESP8266
 // dan Sensor Tanah (Soil Misture Sensor v2.0)
 
 // Tabel Setup Alur Pin
@@ -21,7 +21,7 @@ void loop() {
   float moisture_percentage;
   moisture_percentage = (100.00 - ((analogRead(sensor_pin) / 1023.00) * 100.00));
   
-  Serial.print("Soil Moisture (%): ");
+  Serial.print("Kelembaban Tanah (%): ");
   Serial.print(moisture_percentage);
   Serial.println("%");
 
